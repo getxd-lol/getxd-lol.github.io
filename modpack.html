@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <title>Download the Modpack</title>
+
+  <meta property="og:title" content="Modpack">
+  <meta property="og:url" content="https://getxd-dev.cf/modpack">
+  <meta property="og:site_name" content="Modpack and Mods Download">
+  <meta property="og:image" content="https://yt3.ggpht.com/ytc/AKedOLR18_Sqym8DKuP0l99IewmI-1X57FifKquhLJpvdQ=s900-c-k-c0x00ffffff-no-rj">
+  <meta property="og:description" content="Download the Modpack and Mods here.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    p {
+      margin: 0;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    .overlay, .scare {
+      position: fixed;
+
+      top: 0;
+      left: 0;
+
+      height: 100vh;
+      width: 100vw;
+    }
+
+    p.overlay-title {
+      font-size: 24px;
+      font-weight: 900;
+      color: white;
+      line-height: 1;
+
+      margin-bottom: 16px;
+    }
+
+    .overlay-button {
+      display: inline-flex;
+      align-items: center;
+
+      height: 40px;
+
+      padding-right: 24px;
+      padding-left: 24px;
+
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+
+      border-radius: 4px;
+
+      margin: 4px;
+
+      cursor: pointer
+    }
+
+    .overlay-buttons-wrapper {
+      margin: 24px -8px -8px;
+    }
+
+    #accept-button {
+      background-color: rgb(132, 94, 194);
+
+      color: white;
+    }
+
+    #decline-button {
+      color: rgb(132, 94, 194);
+
+      border: 2px solid rgb(132, 94, 194);
+    }
+
+    p.overlay-description {
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+      line-height: 1.25;
+
+      margin-bottom: 16px;
+    }
+
+    a.overlay-link {
+      display: inline-block;
+
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: 500;
+      color: rgb(132, 94, 194);
+      line-height: 1;
+
+      position: relative;
+
+      margin-top: 16px;
+    }
+
+    a.overlay-link::before {
+      position: absolute;
+
+      content: "";
+
+      height: calc(50% + 4px);
+      width: calc(100% + 8px);
+
+      bottom: -4px;
+      left: -4px;
+
+      background-color: rgba(132, 94, 194, 0.1);
+    }
+
+    .overlay-body {
+      max-width: 512px;
+
+      text-align: center;
+
+      font-family: "Inter", sans-serif;
+    }
+
+    .overlay[hidden] {
+      display: none;
+    }
+
+    .overlay {
+      z-index: 2;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+    #header {
+      background: gold;
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      left: 0;
+      top: 0;
+    }
+    body:before {
+      content: '';
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-image: url("https://cdn.getxd-dev.cf/background.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+      filter: blur(5px);
+      z-index: -9;
+    }
+
+
+
+  </style>
+</head>
+<body>
+<div id="overlay" class="overlay">
+  <div class="overlay-body">
+    <p class="overlay-title">Modpack Download</p>
+    <p class="overlay-description">Download the Weekly Update mods by clicking "Download Mods". If you wanna download the whole modpack, you can click "Download Full Modpack".</p>
+
+
+    <div class="overlay-buttons-wrapper">
+      <div id="accept-button" class="overlay-button" onclick="passwd()">Download Mods</div>
+      <div id="decline-button" class="overlay-button" onclick="passwdd()">Download Full Modpack</div>
+    </div>
+
+    <a href="https://getxd-dev.cf/modpack-list" target="_blank" class="overlay-link">Mods list and information (so outdated, too lazy to update it.)</a>
+
+    <a href="https://getxd-dev.cf/jvm" target="_blank" class="overlay-link">Optional JVM flags for better performance</a>
+  </div>
+</div>
+<script>
+    function passwd(){
+
+        var password = prompt('Enter the password to download the zip: (DM getxd for password)');
+        if(password.toLowerCase() == "password1234567890"){
+            window.open("https://cdn.getxd-dev.cf/i_love_you.zip")
+        }else{
+            alert("incorrect password lmao.");
+        }
+    }
+    function passwdd(){
+
+        var password = prompt('Enter the password to download the zip: (DM getxd for password)');
+        if(password.toLowerCase() == "password1234567890"){
+          window.open("https://cdn.getxd-dev.cf/modpack.zip")
+        }else{
+           alert("incorrect password lmao.");
+        }
+    }
+</script>
+</body>
+</html>
