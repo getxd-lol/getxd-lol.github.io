@@ -1,0 +1,297 @@
+@font-face {
+    font-family: "Euclid Circular B Medium";
+    src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot");
+    src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot?#iefix")
+    format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff2")
+    format("woff2"),
+    url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff")
+    format("woff"),
+    url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.ttf")
+    format("truetype"),
+    url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.svg#Euclid Circular B Medium")
+    format("svg");
+}
+
+@font-face {
+    font-family: 'VK Sans Display';
+    src: url('../../bluezenith/VKSansDisplay-Medium.ttf');
+}
+
+body {
+    background: linear-gradient(to right, #0000FF, #00008B);
+    color: #D3D3D3;
+    font-family: "Euclid Circular B Medium", Poppins;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.hero {
+    margin-top: 5%;
+}
+
+.commands {
+    margin-top: 100px;
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+
+.commands .title {
+    position: relative;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+@media only screen and (max-width: 630px) {
+    .navbar-toggler {
+        display: inherit;
+    }
+
+    .nav-links {
+        display: none !important;
+    }
+}
+
+#features {
+    margin-top: 100px;
+}
+
+.title-features {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-features {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    color: white;
+}
+li {
+    text-align: center;
+}
+
+.title {
+    background: lightblue;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+}
+
+.section-features .header-section {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.section-features .header-section .title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-features .header-section .title:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 1px;
+    background-color: #f70037;
+}
+
+.section-features .header-section .title:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 3px;
+    background-color: lightblue;
+}
+
+.section-features .header-section .title span {
+    color: #f70037;
+}
+
+.section-features .header-section .description {
+    color: #6f6f71;
+}
+.header-section {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: 75px;
+    width: 33%;
+}
+
+.section-features .single-service {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.section-features .single-service .part-1 {
+    padding: 40px 40px 25px;
+    border-bottom: 2px solid #1d1e23;
+}
+
+.section-features .single-service .part-1 i {
+    margin-bottom: 25px;
+    font-size: 50px;
+    color: lightblue;
+}
+
+.section-features .single-service .part-1 .title {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.8em;
+}
+
+.section-features .single-service .part-2 {
+    padding: 30px 40px 40px;
+}
+
+.section-features .single-service .part-2 .description {
+    margin-bottom: 22px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+.section-features .single-service .part-2 a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.section-features .single-service .part-2 a i {
+    margin-right: 10px;
+    color: lightblue;
+}
+
+.footer {
+    padding: 32px 0;
+    position: absolute;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.footer p {
+    margin: 0;
+    line-height: 26px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.footer p a {
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    color: white;
+}
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 1px solid lightblue;
+    cursor: pointer;
+    color: lightgrey;
+    overflow: hidden;
+    box-shadow: 0 9px lightblue;
+    border-radius: 15px;
+    padding: 15px 15px;
+}
+.button:hover {
+    background: linear-gradient(to right, #249D9F, #ADD8E6, #4169e1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+}
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+}
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 10px lightblue;
+    box-shadow: 0 0 10px lightblue;
+}
+.vid-container{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+.bgvid{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    -o-filter: blur(3px);
+    filter: blur(3px);
+}
+.inner-container{
+    width:400px;
+    height:400px;
+    position:absolute;
+    top:calc(50vh - 200px);
+    left:calc(50vw - 200px);
+    overflow:hidden;
+}
+.bgvid.inner{
+    top:calc(-50vh + 200px);
+    left:calc(-50vw + 200px);
+    filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+    -webkit-filter:blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter:blur(10px);
+}
+.audiosticky {
+    position:fixed;
+    bottom:10px;
+    right:0px;
+}
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
