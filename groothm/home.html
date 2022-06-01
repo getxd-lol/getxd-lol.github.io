@@ -36,6 +36,7 @@
             rel="stylesheet"
             type="text/css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -147,12 +148,12 @@
             <div class="row text-center">
                 <div class="col-md-10 col-lg-8">
                     <div class="header-section">
-                        <h2 class="title-features">Exclusive <span>Features</span></h2>
+                        <h2 class="title-features">Very Cool <span>Features</span></h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-offset="100">
                     <div class="single-service">
                         <div class="part-1">
                             <i class="fab fa-spotify"></i> <i class="fab fa-youtube"></i>
@@ -167,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200">
                     <div class="single-service">
                         <div class="part-1">
                             <i class="fas fa-music"></i>
@@ -180,7 +181,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-offset="300">
                     <div class="single-service">
                         <div class="part-1">
                             <i class="fas fa-sliders-h"></i>
@@ -256,6 +257,15 @@
         crossorigin="anonymous"
 ></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 500 // values from 0 to 3000, with step 50ms
+    });
+</script>
+
 </body>
 <style>
     @font-face {

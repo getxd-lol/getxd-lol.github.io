@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-  <title>Download the Modpack</title>
+  <title>Vets Launcher</title>
 
-  <meta property="og:title" content="Modpack">
-  <meta property="og:url" content="https://getxd-dev.cf/modpack">
-  <meta property="og:site_name" content="Modpack and Mods Download">
-  <meta property="og:image" content="https://yt3.ggpht.com/ytc/AKedOLR18_Sqym8DKuP0l99IewmI-1X57FifKquhLJpvdQ=s900-c-k-c0x00ffffff-no-rj">
-  <meta property="og:description" content="Download the Modpack and Mods here.">
+  <meta property="og:title" content="VetsLauncher">
+  <meta property="og:url" content="https://getxd.me/launcher">
+  <meta property="og:site_name" content="omg vets launcher download">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/946990480116301885/979610615448498196/unknown.png">
+  <meta property="og:description" content="vets launcher download hereee! <3">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -154,7 +154,7 @@
       position: fixed;
       width: 100vw;
       height: 100vh;
-      background-image: url("https://cdn.getxd-dev.cf/background.jpg");
+      background-image: url("https://cdn.getxd.me/lol.jpg");
       background-position: center center;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -174,39 +174,29 @@
 <body>
 <div id="overlay" class="overlay">
   <div class="overlay-body">
-    <p class="overlay-title">Modpack Download</p>
-    <p class="overlay-description">Download the Weekly Update mods by clicking "Download Mods". If you wanna download the whole modpack, you can click "Download Full Modpack".</p>
+    <p class="overlay-title">Launcher Download</p>
+    <p class="overlay-description">Download the launcher here by clicking "Download Launcher" button. Please extract the zip in an empty folder. (Java 17 or above is required in your system.) </p>
 
 
     <div class="overlay-buttons-wrapper">
-      <div id="accept-button" class="overlay-button" onclick="passwd()">Download Mods</div>
-      <div id="decline-button" class="overlay-button" onclick="passwdd()">Download Full Modpack</div>
+      <div id="accept-button" class="overlay-button" onclick="passwd()">Download Launcher</div>
     </div>
-
-    <a href="https://getxd-dev.cf/modpack-list" target="_blank" class="overlay-link">Mods list and information (so outdated, too lazy to update it.)</a>
-
-    <a href="https://getxd-dev.cf/jvm" target="_blank" class="overlay-link">Optional JVM flags for better performance</a>
+<br><br><br><br><br>
+    <a href="https://download.oracle.com/java/17/archive/jdk-17.0.3.1_windows-x64_bin.exe" target="_blank" class="overlay-link">MAKE SURE YOU HAVE JAVA 17 OR ABOVE (DOWNLOAD HERE)</a>
+    <br>
+    <a href="https://setup.skidded.works/" target="_blank" class="overlay-link">Launcher Setup Guide</a>
   </div>
 </div>
 <script>
     function passwd(){
 
-        var password = prompt('Enter the password to download the zip: (DM getxd for password)');
-        if(password.toLowerCase() == "password1234567890"){
-            window.open("https://cdn.getxd-dev.cf/i_love_you.zip")
-        }else{
-            alert("incorrect password lmao.");
-        }
-    }
-    function passwdd(){
-
-        var password = prompt('Enter the password to download the zip: (DM getxd for password)');
-        if(password.toLowerCase() == "password1234567890"){
-          window.open("https://cdn.getxd-dev.cf/modpack.zip")
-        }else{
-           alert("incorrect password lmao.");
-        }
-    }
+    var password = prompt('Please be reminded that this requires Java 17 or above in order to launch, if you dont have it, you can download it down below. Type "ok" if you understood.');
+    if(password.toLowerCase() == "ok"){
+    window.open("https://cdn.getxd.me/launcher.zip")
+  }else{
+    alert('just type "ok" smh.');
+  }
+  }
 </script>
 </body>
 </html>
