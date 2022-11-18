@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <title>Vets Launcher</title>
+
+  <meta property="og:title" content="VetsLauncher">
+  <meta property="og:url" content="https://getxd.me/launcher">
+  <meta property="og:site_name" content="omg vets launcher download">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/946990480116301885/979610615448498196/unknown.png">
+  <meta property="og:description" content="vets launcher download hereee! <3">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    p {
+      margin: 0;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    .overlay, .scare {
+      position: fixed;
+
+      top: 0;
+      left: 0;
+
+      height: 100vh;
+      width: 100vw;
+    }
+
+    p.overlay-title {
+      font-size: 24px;
+      font-weight: 900;
+      color: white;
+      line-height: 1;
+
+      margin-bottom: 16px;
+    }
+
+    .overlay-button {
+      display: inline-flex;
+      align-items: center;
+
+      height: 40px;
+
+      padding-right: 24px;
+      padding-left: 24px;
+
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+
+      border-radius: 4px;
+
+      margin: 4px;
+
+      cursor: pointer
+    }
+
+    .overlay-buttons-wrapper {
+      margin: 24px -8px -8px;
+    }
+
+    #accept-button {
+      background-color: rgb(132, 94, 194);
+
+      color: white;
+    }
+
+    #decline-button {
+      color: rgb(132, 94, 194);
+
+      border: 2px solid rgb(132, 94, 194);
+    }
+
+    p.overlay-description {
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+      line-height: 1.25;
+
+      margin-bottom: 16px;
+    }
+
+    a.overlay-link {
+      display: inline-block;
+
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: 500;
+      color: rgb(132, 94, 194);
+      line-height: 1;
+
+      position: relative;
+
+      margin-top: 16px;
+    }
+
+    a.overlay-link::before {
+      position: absolute;
+
+      content: "";
+
+      height: calc(50% + 4px);
+      width: calc(100% + 8px);
+
+      bottom: -4px;
+      left: -4px;
+
+      background-color: rgba(132, 94, 194, 0.1);
+    }
+
+    .overlay-body {
+      max-width: 512px;
+
+      text-align: center;
+
+      font-family: "Inter", sans-serif;
+    }
+
+    .overlay[hidden] {
+      display: none;
+    }
+
+    .overlay {
+      z-index: 2;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+    #header {
+      background: gold;
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      left: 0;
+      top: 0;
+    }
+    body:before {
+      content: '';
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-image: url("https://cdn.getxd.me/lol.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+      filter: blur(5px);
+      z-index: -9;
+    }
+
+
+
+  </style>
+</head>
+<body>
+<div id="overlay" class="overlay">
+  <div class="overlay-body">
+    <p class="overlay-title">Launcher Download</p>
+    <p class="overlay-description">Download the launcher here by clicking "Download Launcher" button. Please extract the zip in an empty folder. (Java 17 or above is required in your system.) </p>
+
+
+    <div class="overlay-buttons-wrapper">
+      <div id="accept-button" class="overlay-button" onclick="passwd()">Download Launcher</div>
+    </div>
+<br><br><br><br><br>
+    <a href="https://download.oracle.com/java/17/archive/jdk-17.0.3.1_windows-x64_bin.exe" target="_blank" class="overlay-link">MAKE SURE YOU HAVE JAVA 17 OR ABOVE (DOWNLOAD HERE)</a>
+    <br>
+    <a href="https://setup.skidded.works/" target="_blank" class="overlay-link">Launcher Setup Guide</a>
+  </div>
+</div>
+<script>
+    function passwd(){
+
+    var password = prompt('Please be reminded that this requires Java 17 or above in order to launch, if you dont have it, you can download it down below. Type "ok" if you understood.');
+    if(password.toLowerCase() == "ok"){
+    window.open("https://cdn.getxd.me/launcher.zip")
+  }else{
+    alert('just type "ok" smh.');
+  }
+  }
+</script>
+</body>
+</html>

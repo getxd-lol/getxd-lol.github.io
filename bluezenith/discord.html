@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<style>
+    @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rowdies:wght@300;700&family=Short+Stack&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    body {
+        background-image: url("https://coolbackgrounds.io/images/backgrounds/index/aqua-d9b59c89.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    h1 {
+        font-family: "Short Stack";
+    }
+    p {
+        font-family: "Fredoka One";
+    }
+    body {
+        display: grid;
+        height: 35vh;
+        place-items: center;
+    }
+</style>
+<head>
+    <title>Redirecting...</title>
+    <!--Redirector-->
+    <meta http-equiv="refresh" content="3; url='https://discord.gg/8WREpxMT'" />
+    <!--OpenGraph-->
+    <meta property="og:site_name" content="BlueZenith Client Discord" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BlueZenith" />
+    <meta property="og:image" content="../assets/img/bluezenith.png" />
+    <meta property="og:description" content="Join the official BlueZenith Client Discord" />
+</head>
+<body>
+<h1>Redirecting you in 3 seconds</h1>
+
+<p>Here's a cat for now :3 (Powered by TheCatAPI)</p>
+<br>
+<div id="url"></div>
+<div id="image"></div>
+</body>
+</html>
+<!--Scripts-->
+<script>
+    function ajax_get(url, callback) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                console.log('responseText:' + xmlhttp.responseText);
+                try {
+                    var data = JSON.parse(xmlhttp.responseText);
+                } catch (err) {
+                    console.log(err.message + " in " + xmlhttp.responseText);
+                    return;
+                }
+                callback(data);
+            }
+        };
+
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    }
+
+    ajax_get('https://api.thecatapi.com/v1/images/search', function(data) {
+        document.getElementById("url").innerHTML = data[0]["url"];
+
+        var html = '<img src="' + data[0]["url"] + '">';
+        document.getElementById("image").innerHTML = html;
+    });
+</script>

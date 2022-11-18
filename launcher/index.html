@@ -1,0 +1,124 @@
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#ec8fd1">
+	<meta content="Vets Launcher" property="og:title">
+	<meta name="description" content="Download Vets Launcher here!!!! <3">
+	<meta property="og:description" content="Download Vets Launcher here!!!! <3">
+	<meta name="twitter:description" content="Download Vets Launcher here!!!! <3" />
+	<meta name="twitter:title" content="Vets Launcher" />
+
+	<meta name="apple-mobile-web-app-title" content="VetsLauncher">
+	<meta name="application-name" content="VetsLauncher">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="msapplication-config" content="dist/img/icons/browserconfig.xml?v=1">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="180x180" href="dist/img/icons/apple-touch-icon.png?v=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="dist/img/icons/favicon-32x32.png?v=1">
+	<link rel="icon" type="image/png" sizes="16x16" href="dist/img/icons/favicon-16x16.png?v=1">
+	<link rel="manifest" href="dist/img/icons/site.webmanifest?v=1">
+	<link rel="shortcut icon" href="dist/img/icons/favicon.ico?v=1">
+
+	<title>Vets Launcher</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		  integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+		  crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		  integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+		  crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="greycliff.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="root" class="body-wrap">
+	<header class="site-header" data-aos-duration="700" data-aos="fade-down">
+		<div class="container">
+			<div class="site-header-inner">
+				<div class="brand">
+					<h1 class="header-logo m-0">
+					</h1>
+				</div>
+				<nav class="header-nav">
+					<div class="header-nav-inner">
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="site-content">
+		<div class="bg-video">
+			<img src="lol.jpg">
+		</div>
+		<section class="hero section center-content illustration-section-01">
+			<div class="container-sm">
+				<div class="hero-inner section-inner">
+					<div class="hero-content" data-aos-duration="700" data-aos="fade-up">
+						<h1 class="text-gradient mt-0 mb-16" data-aos-duration="700" data-aos="fade-up"
+							data-aos-delay="200" style="display: initial">Vets Launcher</h1>
+						<div class="container-xs">
+							<p class="m-0 mb-1" data-aos-duration="700" data-aos="fade-up" data-aos-delay="400">
+								Epic Launcher for Vetrains for all your modding needs.
+							</p>
+							<div class="mb-8" data-aos-duration="700" data-aos="fade-up" data-aos-delay="600">
+								<div class="button-group">
+									<a class="button button-primary button-wide-mobile" href="https://getxd-lol.github.io/launcher.rar">Download</a>
+									<a href="https://setup.skidded.works/" class="button button-dark button-wide-mobile">Setup Guide</a>
+								</div>
+							</div>
+						</div>
+						<small data-aos-duration="700" data-aos="fade-up"
+							   data-aos-delay="1000">Last launcher update: 05/31/2022 7:08pm GMT+8</small>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="/">
+						<div class="navbar-logo text-gradient">VetsLauncher</div>
+					</a>
+					<p class="desc">
+						made with ❤️ by getxd
+						<br>
+						took me days to figure it out
+					</p>
+					<div class="social" style="margin-left: 0.1rem">
+						<a href="https://github.com/getxd-dev" target="_blank" rel="noopener" title="My GitHub!">
+							<i class="fa-brands fa-github"></i>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+		integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+		crossorigin="anonymous"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="dist/js/snow.min.js"></script>
+<script>
+	AOS.init();
+	MicroModal.init();
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener("click", function (e) {
+			e.preventDefault();
+
+			document.querySelector(this.getAttribute("href")).scrollIntoView({
+				behavior: "smooth"
+			});
+		});
+	});
+	function updateViews(response) {
+		document.getElementById("views").innerHTML = `<i class="fas fa-eye"></i> ${response.value}`;
+	}
+</script>
+</body>
+
+</html>
